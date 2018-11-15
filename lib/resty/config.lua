@@ -16,7 +16,7 @@ local function cluster()
     end
 end
 
-local config = {
+local Config = {
     path = ngx.config.prefix() .. "config",
     exts = {
         lua = function(path)
@@ -35,7 +35,7 @@ local config = {
     __cache = {}
 }
 
-setmetatable(config, {
+setmetatable(Config, {
     __call = function(self)
         local filename = self.path .. "/" .. cluster()
         
@@ -59,4 +59,4 @@ setmetatable(config, {
     end
 })
 
-return config
+return Config
