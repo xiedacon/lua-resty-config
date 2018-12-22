@@ -40,11 +40,11 @@ print(config.isMaster)
 
 ### Config.path
 
-* ``<string>`` 配置文件目录，默认为 ``ngx.config.prefix() .. "config"``
+* ``<string>`` 配置文件目录，默认为 ``ngx.config.prefix() .. "config"``
 
 ### Config.exts
 
-* ``<table>`` 配置文件加载策略
+* ``<table>`` 配置文件加载策略
   * ``Config.exts.lua`` ``<function>`` lua 文件加载策略
   * ``Config.exts.json`` ``<function>`` json 文件加载策略
 
