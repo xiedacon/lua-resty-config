@@ -2,6 +2,8 @@
 
 [![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://git.souche-inc.com/xieda/lua-resty-config/blob/master/LICENSE)
 
+> [ngx.timer.at](https://github.com/openresty/lua-nginx-module#ngxtimerat) 不能在 init_by_lua 阶段使用
+
 ## Requirements
 
 * cjson
