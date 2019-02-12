@@ -17,6 +17,7 @@ local function cluster()
 end
 
 local Config = {
+    _VERSION = "0.1",
     path = ngx.config.prefix() .. "config",
     exts = {
         lua = function(path)
